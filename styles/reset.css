@@ -5,8 +5,9 @@
 	}
 	.page {
 		margin: 0 auto;
-		padding: 50px;
-		max-width: 1600px;
+		max-width: 1440px;
 		min-height: 100vh;
-		background: lightgoldenrodyellow;
+		background: var(--champagne);
+		border: 1px solid black;
 	}
+

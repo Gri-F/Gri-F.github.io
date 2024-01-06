@@ -1,65 +1,63 @@
 .header {
-	margin: 69px 73px 0px 110px;
+	padding: 69px 73px 50px 110px;
 }
 .header__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
 }
-.header__logo {
-	margin-right: 83px;
+/* .header__logo {
 	width: 211px;
 	height: 41px;
-}
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+} */
+.header__logo-link {
+	margin-right: 71px;
 }
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
-	max-width: 685px;
-	min-height: 46px;
+	gap: 15px;
 	list-style-type: none;
 }
+.nav {
+	margin-right: 50px;
+}
 .nav__item_home-space {
-	margin-right: 66px;
+	margin-right: 51px;
 }
 .nav__link {
 	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
+	font-size: 21px;
 	line-height: 39px;
 	font-weight: 300;
 	text-decoration: none;
 	color: var(--violet-blue);
 }
 .nav__link-active {
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 21px;
 	line-height: 39px;
 	font-weight: 700;
 	text-underline-offset: 8px;
-	color: var(--beige-gray);
+	color: var(--violet-blue);
 }
 .nav__item_class-space {
-	margin-right: 74px;
+	margin-right: 59px;
 }
 .nav__item_tours-space {
-	margin-right: 95px;
+	margin-right: 80px;
 }
 .nav__item_maps-space {
-	margin-right: 112px;
+	margin-right: 97px;
 }
-.nav__item_contact-space {
-	margin-right: 65px;
-}
+
 .header__wrap {
 	position: relative;
 }
 .btn {
-	margin-right: 39px;
 	width: 189px;
 	height: 33px;
 	border: none;

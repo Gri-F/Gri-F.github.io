@@ -5,28 +5,28 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
 	gap: 15px;
 }
-/* .header__logo {
+.header__logo {
+	margin-right: 71px;
 	width: 211px;
 	height: 41px;
-} */
-.header__logo-link {
-	margin-right: 71px;
+}
+.nav {
+	margin-right: 45px;
 }
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end;
 	gap: 15px;
 	list-style-type: none;
 }
-.nav {
-	margin-right: 50px;
-}
+.nav__link:hover {
+	font-weight: 700;
+	transition: 1s;
+} 
 .nav__item_home-space {
-	margin-right: 51px;
+	margin-right: 46px;
 }
 .nav__link {
 	font-family: 'Nunito', sans-serif;
@@ -45,17 +45,22 @@
 	color: var(--violet-blue);
 }
 .nav__item_class-space {
-	margin-right: 59px;
+	margin-right: 54px;
 }
 .nav__item_tours-space {
-	margin-right: 80px;
+	margin-right: 75px;
 }
 .nav__item_maps-space {
-	margin-right: 97px;
+	margin-right: 92px;
 }
 
 .header__wrap {
 	position: relative;
+	margin-right: 38px;
+}
+.header__wrap:hover .header__search {
+	animation: eight 1.5s linear infinite both;
+	transition: 1s;
 }
 .btn {
 	width: 189px;
@@ -66,10 +71,13 @@
 	background-color: var(--white);
 	box-shadow: inset 0px 5px 5px 0px rgba(2,4,0,0.2);
 }
+.btn:hover {
+	cursor: pointer;
+}
 .header__search {
 	position: absolute;
 	top: -2px;
-	right: 57px;
+	right: 18px;
 	display: block;
 	width: 24px;
 	height: 24px;

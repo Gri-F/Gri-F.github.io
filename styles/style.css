@@ -1,3 +1,4 @@
+/*------ header ------------------------ */
 .header {
 	padding: 69px 73px 50px 110px;
 }
@@ -108,4 +109,43 @@
 	width: 45px;
 	height: 2px;
 	background-color: var(--violet-blue);
+}
+
+/*------ main ------------------------ */
+.hike {
+	padding: 22px 0px 0px 101px;
+	min-height: 661px;
+	background: url('../images/satisfied-person.jpg') center / 1440px 835px no-repeat;
+}
+.hike__title {
+	margin-bottom: 32px;
+	max-width: 346px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 75px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--violet-blue);
+}
+.hike__subtitle {
+	position: relative;
+	max-width: 290px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 37.5px;
+	line-height: 45px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: var(--violet-blue);
+	letter-spacing: 0.075em;
+}
+.hike__subtitle::after {
+	position: absolute;
+	content: '';
+	bottom: -15px;
+	left: -17px;
+	display: block;
+	width: 35px;
+	height: 36px;
+	border-left: 2px solid var(--violet-blue);
+	border-bottom: 2px solid var(--violet-blue);
 }

@@ -112,9 +112,11 @@
 }
 
 /*------ main ------------------------ */
+
+/*------ hike ------------------------ */
 .hike {
 	padding: 22px 0px 0px 101px;
-	min-height: 661px;
+	min-height: 485px;
 	background: url('../images/satisfied-person.jpg') center / 1440px 835px no-repeat;
 }
 .hike__title {
@@ -148,4 +150,54 @@
 	height: 36px;
 	border-left: 2px solid var(--violet-blue);
 	border-bottom: 2px solid var(--violet-blue);
+}
+/*------ excursions -------------------- */
+.excursions {
+	padding: 79px 115px 86px 48px; 
+}
+.excursions__wrap {
+	position: relative;
+	margin-left: 50px;
+}
+.excursion__title {
+	margin-bottom: 36px;
+	max-width: 490px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 58.4px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.excursion__title::before {
+	position: absolute;
+	content: '';
+	top: 4px;
+	right: -74px;
+	display: block;
+	width: 23px;
+	height: 23px;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
+}
+.excursion__title::after {
+	position: absolute;
+	content: '';
+	bottom: 2px;
+	right: -74px;
+	display: block;
+	width: 23px;
+	height: 23px;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
+}
+.excursion__title::after line {
+	stroke: var(--white);
+}
+.excursions__line {
+	position: absolute;
+	left: -5px;
+	display: block;
+	width: 95px;
+	height: 9px;
+	background-color: var(--violet-blue);
 }

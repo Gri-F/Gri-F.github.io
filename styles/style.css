@@ -155,11 +155,11 @@
 .excursions {
 	padding: 79px 115px 86px 48px; 
 }
-.excursions__wrap {
+.excursions__info {
 	position: relative;
 	margin-left: 50px;
 }
-.excursion__title {
+.excursions__title {
 	margin-bottom: 36px;
 	max-width: 490px;
 	font-family: 'BebasNeue', sans-serif;
@@ -170,7 +170,7 @@
 	letter-spacing: 0.075em;
 	color: var(--violet-blue);
 }
-.excursion__title::before {
+.excursions__title::before {
 	position: absolute;
 	content: '';
 	top: 4px;
@@ -180,7 +180,7 @@
 	height: 23px;
 	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
 }
-.excursion__title::after {
+.excursions__title::after {
 	position: absolute;
 	content: '';
 	bottom: 2px;
@@ -190,7 +190,7 @@
 	height: 23px;
 	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
 }
-.excursion__title::after line {
+.excursions__title::after line {
 	stroke: var(--white);
 }
 .excursions__line {
@@ -200,4 +200,119 @@
 	width: 95px;
 	height: 9px;
 	background-color: var(--violet-blue);
+}
+.excursions__info-days {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 47px;
+}
+.day1 {
+	padding: 47px 28px 49px 49px;
+	max-width: 615px;
+	width: 100%;
+}
+.day1__wrap {
+	margin-bottom: 37px;
+	display: flex;
+	align-items: flex-end;
+	gap: 58px;
+}
+.day1__info {
+	max-width: 322px;
+}
+.day1__title {
+	font-family: 'BebasNeue',sans-serif;
+	font-size: 41.7px;
+	line-height: 41px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.day1__list {
+	list-style-type: none;
+}
+.day1__item {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20.9px;
+	line-height: 41px;
+	font-weight:700;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.day1__pic {
+	width: 137px;
+	height: 137px;
+	border-radius: 50%;
+	background-color: var(--violet-blue);
+}
+.day1__image {
+	display: block;
+	margin: 30px auto;
+	width: 92px;
+	height: 77px;
+	fill: var(--white);
+}
+.day1__line {
+	display: block;
+	margin-bottom: 42px;
+	width: 100%;
+	height: 2px;
+	background-color: var(--violet-blue);
+}
+.day1__date {
+	margin-bottom: 17px;
+}
+.day1__title_consectetur {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 37.5px;
+	line-height: 41px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--violet-blue);
+}
+.day1__data {
+	display: block;
+	margin-bottom: 24px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 37.5px;
+	line-height: 41px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--violet-blue);
+}
+.day1__time {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 25px;
+	line-height: 41px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--violet-blue);
+}
+.rating {
+	display: flex;
+	gap: 17px;
+}
+.rating__list {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+}
+.raying__item {
+	display: block;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	border: 1px solid var(--violet-blue);
+}
+.raying__item_color {
+	background-color: var(--violet-blue);
+}
+.rating__ball {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20.9px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--violet-blue);
 }

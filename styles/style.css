@@ -153,7 +153,40 @@
 }
 /*------ excursions -------------------- */
 .excursions {
-	padding: 79px 115px 86px 48px; 
+	padding: 79px 115px 86px 48px;
+	box-shadow: 0px 7px 0px 0px #e2e9ef;
+}
+.excursions__wrapper {
+	position: relative;
+}
+.excursions__close {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	right: -74px;
+	width: 23px;
+	min-height: 100%;
+}
+.excursions__close-top {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+	width: 93px;
+}
+.excursions__svg {
+	width: 23px;
+	height: 23px;
+}
+.excursions__close-bottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+	position: absolute;
+	bottom: 18px;
+	height: 93px;
 }
 .excursions__info {
 	position: relative;
@@ -170,29 +203,6 @@
 	letter-spacing: 0.075em;
 	color: var(--violet-blue);
 }
-.excursions__title::before {
-	position: absolute;
-	content: '';
-	top: 4px;
-	right: -74px;
-	display: block;
-	width: 23px;
-	height: 23px;
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
-}
-.excursions__title::after {
-	position: absolute;
-	content: '';
-	bottom: 2px;
-	right: -74px;
-	display: block;
-	width: 23px;
-	height: 23px;
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="0" x2="19" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /><line x1="19" y1="0" x2="4" y2="23" stroke="rgb(50, 69, 95)" stroke-width="5" stroke-linecap="square" /></svg>');
-}
-.excursions__title::after line {
-	stroke: var(--white);
-}
 .excursions__line {
 	position: absolute;
 	left: -5px;
@@ -204,12 +214,16 @@
 .excursions__info-days {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 47px;
+	margin-top: 101px;
 }
 .day1 {
 	padding: 47px 28px 49px 49px;
 	max-width: 615px;
 	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0px 5px 10px 0px rgba(2,4,0,0.2);
 }
 .day1__wrap {
 	margin-bottom: 37px;
@@ -241,6 +255,9 @@
 	color: var(--violet-blue);
 }
 .day1__pic {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 137px;
 	height: 137px;
 	border-radius: 50%;
@@ -248,7 +265,6 @@
 }
 .day1__image {
 	display: block;
-	margin: 30px auto;
 	width: 92px;
 	height: 77px;
 	fill: var(--white);

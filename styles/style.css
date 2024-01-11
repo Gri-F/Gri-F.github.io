@@ -84,6 +84,8 @@
 	height: 24px;
 }
 .header__loop {
+	width: 24px;
+	height: 24px;
 	fill: var(--black-gray);
 }
 .header__burger {

@@ -334,3 +334,103 @@
 	text-transform: uppercase;
 	color: var(--violet-blue);
 }
+/*----- national-park ----------------*/
+
+.national-park {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	padding: 142px 110px 87px 97px;
+	background: url('../images/one-traveler_pixian_ai.png') center / 1440px 579px no-repeat;
+	background-color: rgba(86, 75, 103, 0.75);
+}
+.national-park__title {
+	position: relative;
+	max-width: 700px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 100px;
+	line-height: 85px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.national-park__title::after {
+	position: absolute;
+	content: '';
+	top: -37px;
+	right: -35px;
+	width: 35px;
+	height: 37px;
+	border-top: 3px solid var(--white);
+	border-right: 3px solid var(--white);
+}
+.national-park__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.national-park__subtitle {
+	position: relative;
+	max-width: 410px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.national-park__subtitle::before {
+	position: absolute;
+	content: '';
+	left: -24px;
+	bottom: -37px;
+	width: 36px;
+	height: 37px;
+	border-left: 3px solid var(--white);
+	border-bottom: 3px solid var(--white);
+}
+.national-park__wrap-date {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.national-park__date {
+	margin-bottom: 83px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	line-height: 41px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.national-park__date::after {
+	position: absolute;
+	content: '';
+	top: 71px;
+	right: 11px;
+	width: 95px;
+	height: 9px;
+	background-color: var(--champagne);
+}
+.national-park__btn {
+	padding: 9px 30px;
+	width: 190px;
+	font-size: 0px;
+	border: none;
+	border-radius: 33px;
+	background-color: var(--champagne);
+}
+.national-park__link {
+	text-decoration: none;
+	font-family: 'Raleway-Bold', sans-serif;
+	font-size: 25px;
+	line-height: 14px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}

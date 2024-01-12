@@ -150,8 +150,8 @@
 	display: block;
 	width: 35px;
 	height: 36px;
-	border-left: 2px solid var(--violet-blue);
-	border-bottom: 2px solid var(--violet-blue);
+	border-left: var(--border-blue);
+	border-bottom: var(--border-blue);
 }
 /*------ excursions -------------------- */
 .excursions {
@@ -362,8 +362,8 @@
 	right: -35px;
 	width: 35px;
 	height: 37px;
-	border-top: 3px solid var(--white);
-	border-right: 3px solid var(--white);
+	border-top: var(--border);
+	border-right: var(--border);
 }
 .national-park__wrap {
 	display: flex;
@@ -389,8 +389,8 @@
 	bottom: -37px;
 	width: 36px;
 	height: 37px;
-	border-left: 3px solid var(--white);
-	border-bottom: 3px solid var(--white);
+	border-left: var(--border);
+	border-bottom: var(--border);
 }
 .national-park__wrap-date {
 	display: flex;
@@ -430,6 +430,156 @@
 	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 14px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+
+/*----- rock-climbing ----------------*/
+
+.rock-climbing {
+	min-height: 850px;
+	display: flex;
+	flex-direction: column;
+	gap: 63px;
+	padding: 70px 124px 70px 96px;
+	background: url('../images/rest-stone.jpg') center bottom / 1440px 1133px no-repeat;
+}
+.rock-climbing__wrap-top {
+	display: flex;
+	gap: 25px;
+	justify-content: space-between;
+	align-items: center;
+}
+.rock-climbing__title {
+	position: relative;
+	max-width: 240px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 75px;
+	line-height: 75px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--violet-blue);
+}
+.rock-climbing__title::before {
+	position: absolute;
+	content: '';
+	top: -20px;
+	right: 70px;
+	width: 36px;
+	height: 37px;
+	border-top: var(--border-blue);
+	border-right: var(--border-blue);
+}
+.rock-climbing__title::after {
+	position: absolute;
+	content: '';
+	left: -28px;
+	bottom: -36px;
+	width: 36px;
+	height: 37px;
+	border-left: var(--border-blue);
+	border-bottom: var(--border-blue);
+}
+.rock-climbing__wrap {
+	display: flex;
+	gap: 65px;
+}
+.rock-climbing__wrap-left {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.rock-climbing__wrap-left::after {
+	position: absolute;
+	content: '';
+	top: 64px;
+	left: -45px;
+	width: 36px;
+	height: 37px;
+	border-left: var(--border-blue);
+	border-bottom: var(--border-blue);
+}
+.rock-climbing__date {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 33.4px;
+	line-height: 33px;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.rock-climbing__time {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 25px;
+	line-height: 33px;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.rock-climbing__wrap-right {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.rock-climbing__close {
+	position: absolute;
+	content: '';
+	top: 15px;
+	right: -60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 8px;
+	height: 30px;
+}
+.rock-climbing__close-small {
+	width: 8px;
+	height: 8px;
+}
+.rock-climbing__subtitle {
+	margin-bottom: 39px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 41.7px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.rock-climbing__text {
+	position: relative;
+	margin-bottom: 85px;
+	max-width: 525px;
+	font-family: 'Bitter', sans-serif;
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	color: var(--violet-blue);
+}
+.rock-climbing__text::after {
+	position: absolute;
+	content: '';
+	left: -10px;
+	bottom: -43px;
+	width: 531px;
+	height: 3px;
+	background-color: var(--violet-blue);
+}
+.rock-climbing__module {
+	max-width: 330px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 41px;
 	font-weight: 700;
 	letter-spacing: 0.075em;
 	color: var(--violet-blue);

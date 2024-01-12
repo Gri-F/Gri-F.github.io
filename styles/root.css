@@ -6,4 +6,6 @@
 	--black-gray: #1f262f;
 	--lavender: #e1e9ef;
 	--liver: #564b67;
+	--border: 3px solid var(--white);
+	--border-blue: 3px solid var(--violet-blue);
 }

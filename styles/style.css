@@ -6,58 +6,40 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 15px;
+	gap: 35px;
+	justify-content: space-between;
 }
 .header__logo {
-	margin-right: 71px;
 	width: 211px;
 	height: 41px;
 }
 .nav {
-	margin-right: 45px;
+	max-width: 700px;
+	width: 100%;
 }
 .nav__list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
+	justify-content: space-evenly;
+	gap: 35px;
 	list-style-type: none;
 }
 .nav__link:hover {
+	text-decoration-color: var(--violet-blue);
+	transition: .7s linear;
 	font-weight: 700;
-	transition: 1s;
-} 
-.nav__item_home-space {
-	margin-right: 46px;
 }
 .nav__link {
 	font-family: 'Nunito', sans-serif;
 	font-size: 21px;
 	line-height: 39px;
 	font-weight: 300;
-	text-decoration: none;
-	color: var(--violet-blue);
-}
-.nav__link-active {
-	font-family: 'Nunito', sans-serif;
-	font-size: 21px;
-	line-height: 39px;
-	font-weight: 700;
+	text-decoration-color: var(--champagne);
 	text-underline-offset: 8px;
 	color: var(--violet-blue);
 }
-.nav__item_class-space {
-	margin-right: 54px;
-}
-.nav__item_tours-space {
-	margin-right: 75px;
-}
-.nav__item_maps-space {
-	margin-right: 92px;
-}
-
 .header__wrap {
 	position: relative;
-	margin-right: 38px;
 }
 .header__wrap:hover .header__search {
 	animation: eight 1.5s linear infinite both;
@@ -89,6 +71,7 @@
 	fill: var(--black-gray);
 }
 .header__burger {
+	display: none;
 	position: relative;
 	width: 45px;
 	height: 2px;
@@ -362,8 +345,8 @@
 	right: -35px;
 	width: 35px;
 	height: 37px;
-	border-top: var(--border);
-	border-right: var(--border);
+	border-top: var(--border-white);
+	border-right: var(--border-white);
 }
 .national-park__wrap {
 	display: flex;
@@ -389,8 +372,8 @@
 	bottom: -37px;
 	width: 36px;
 	height: 37px;
-	border-left: var(--border);
-	border-bottom: var(--border);
+	border-left: var(--border-white);
+	border-bottom: var(--border-white);
 }
 .national-park__wrap-date {
 	display: flex;
@@ -424,6 +407,18 @@
 	border: none;
 	border-radius: 33px;
 	background-color: var(--champagne);
+	transition: 0.7s linear;
+}
+.national-park__btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	border: 1px solid var(--champagne);
+	background-color: var(--violet-blue);
+	transition: 0.7s linear;
+}
+.national-park__btn:hover a {
+	color: var(--champagne);
+	transition: 0.7s linear;
 }
 .national-park__link {
 	text-decoration: none;
@@ -591,11 +586,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 106px 0px 97px 96px;
+	padding: 105px 0px 97px 96px;
 }
 .visit__title {
 	position: relative;
-	margin-bottom: 72px;
+	margin-bottom: 70px;
 	max-width: 360px;
 	font-family: 'BebasNeue', sans-serif;
 	font-size: 75px;
@@ -628,7 +623,7 @@
 	display: flex;
 	gap: 44px;
 	margin: auto;
-	padding: 0px 0px 101px 0px;
+	padding: 0px 0px 57px 0px;
 	list-style-type: none;
 }
 .visit__item {
@@ -636,13 +631,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
-	padding: 10px;
+	padding: 10px 10px 39px;
 	max-width: 338px;
 }
 .visit__pic {
 	display: block;
 	margin-bottom: 30px;
-	width: 274px;
+	width: 268px;
 	height: 273px;
 }
 .visit__image {
@@ -652,7 +647,7 @@
 	margin: 0px 0px 7px 19px;
 	font-family: 'BebasNeue', sans-serif;
 	font-size: 41.7px;
-	line-height: 1.2;
+	line-height: 0.78em;
 	font-weight: 400;
 	letter-spacing: 0.05em;
 	color: var(--violet-blue);
@@ -662,7 +657,7 @@
 	margin: 0px 0px 33px 19px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20.9px;
-	line-height: 1.2;
+	line-height: 1.2em;
 	font-weight: 700;
 	text-decoration: none;
 	color: var(--violet-blue);
@@ -680,7 +675,7 @@
 	margin: 0px 0px 0px 19px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
-	line-height: 65px;
+	line-height: 24px;
 	font-weight: 700;
 	letter-spacing: 0.075em;
 	color: var(--violet-blue);
@@ -703,12 +698,24 @@
 }
 .visit__btn {
 	margin: auto;
-	width: 198px;
+	width: 189px;
 	height: 34px;
 	border: none;
 	border-radius: 30px;
 	font-size: 0px;
 	background-color: var(--violet-blue);
+	transition: 0.7s linear;
+}
+.visit__btn:hover {
+	border: 1px solid var(--violet-blue);
+	background-color: var(--champagne);
+	transition: 0.7s;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.visit__btn:hover a {
+	color: var(--violet-blue);
+	transition: 0.7s;
 }
 .visit__link {
 	font-family: 'Raleway', sans-serif;

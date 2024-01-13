@@ -324,7 +324,7 @@
 	flex-direction: column;
 	gap: 22px;
 	padding: 142px 110px 87px 97px;
-	background: url('../images/one-traveler_pixian_ai.png') center / 1440px 579px no-repeat;
+	background: linear-gradient(90deg, rgba(86,75,103,0.74), rgba(86,75,103,0.74)), url('../images/one-traveler-pixian-ai.jpg') center / 1440px 579px no-repeat;
 	background-color: rgba(86, 75, 103, 0.75);
 }
 .national-park__title {
@@ -379,10 +379,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 23px;
 	position: relative;
 }
 .national-park__date {
-	margin-bottom: 83px;
+	margin-bottom: 60px;
 	font-family: 'BebasNeue', sans-serif;
 	font-size: 50px;
 	line-height: 41px;
@@ -725,4 +726,117 @@
 	letter-spacing: 0.075em;
 	text-decoration: none;
 	color: var(--champagne);
+}
+
+/*------ backpacking ------------------ */
+
+.backpacking {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	align-items: flex-end;
+	padding: 142px 106px 87px 87px;
+	min-height: 591px;
+	background: linear-gradient(90deg, rgba(50,69,95,0.74), rgba(50,69,95,0.74)), url('../images/looking-at-the-mountains.jpg') center center / 1440px 591px no-repeat;
+	}
+.backpacking__title {
+	position: relative;
+	max-width: 485px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 100px;
+	line-height: 100px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.backpacking__title::after {
+	position: absolute;
+	content: '';
+	top: -34px;
+	right: -32px;
+	width: 35px;
+	height: 37px;
+	border-top: var(--border-white);
+	border-right: var(--border-white);
+}
+.backpacking__wrap {
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	width: 100%;
+}
+.backpacking__wrap-date {
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+.backpacking__date {
+	position: relative;
+	margin-bottom: 60px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	line-height: 38px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.backpacking__date::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -30px;
+	width: 95px;
+	height: 9px;
+	background-color: var(--champagne);
+}
+.backpacking__btn {
+	padding: 5px 32px 5px 32px;
+	border-radius: 30px;
+	border: none;
+	transition: 0.7s linear;
+}
+.backpacking__btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	background-color: var(--violet-blue);
+	border: 1px solid var(--champagne);
+	transition: 0.7s linear;
+}
+.backpacking__btn:hover a {
+	color: var(--champagne);
+	transition: 0.7 linear;
+}
+.backpacking__link {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 24px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	text-decoration: none;
+	color: var(--violet-blue);
+}
+.backpacking__subtitle {
+	position: relative;
+	max-width: 412px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 0.075em;
+	color: var(--white);
+}
+.backpacking__subtitle::after {
+	position: absolute;
+	content: '';
+	top: 87px;
+	left: 136px;
+	width: 36px;
+	height: 37px;
+	border-left: var(--border-white);
+	border-bottom: var(--border-white);
 }

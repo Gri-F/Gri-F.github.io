@@ -30,7 +30,7 @@
 	font-weight: 700;
 }
 .nav__link {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito-Light', sans-serif;
 	font-size: 21px;
 	line-height: 39px;
 	font-weight: 300;
@@ -232,7 +232,7 @@
 	list-style-type: none;
 }
 .day1__item {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 20.9px;
 	line-height: 41px;
 	font-weight:700;
@@ -310,7 +310,7 @@
 	background-color: var(--violet-blue);
 }
 .rating__ball {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 20.9px;
 	line-height: 1.2;
 	font-weight: 700;
@@ -519,7 +519,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 25px;
 	font-weight: 700;
@@ -554,7 +554,7 @@
 .rock-climbing__text {
 	position: relative;
 	margin-bottom: 85px;
-	max-width: 525px;
+	max-width: 520px;
 	font-family: 'Bitter', sans-serif;
 	font-size: 25px;
 	line-height: 45px;
@@ -573,7 +573,7 @@
 }
 .rock-climbing__module {
 	max-width: 330px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 41px;
 	font-weight: 700;
@@ -656,7 +656,7 @@
 .visit__text {
 	position: relative;
 	margin: 0px 0px 33px 19px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 20.9px;
 	line-height: 1.2em;
 	font-weight: 700;
@@ -674,7 +674,7 @@
 }
 .visit__location {
 	margin: 0px 0px 0px 19px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 24px;
 	font-weight: 700;
@@ -719,7 +719,7 @@
 	transition: 0.7s;
 }
 .visit__link {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 14px;
 	font-weight: 700;
@@ -810,7 +810,7 @@
 	transition: 0.7 linear;
 }
 .backpacking__link {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 24px;
 	font-weight: 700;
@@ -935,7 +935,7 @@
 	color: var(--beige-gray);
 }
 .camping-classes__text {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 37px;
 	font-weight: 700;
@@ -964,7 +964,7 @@
 	transition: 0.7s;
 }
 .camping-classes__link {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 24px;
 	font-weight: 700;
@@ -981,4 +981,140 @@
 	justify-content: space-between;
 	width: 23px;
 	height: 93px;
+}
+
+/*----- mountaineering ------------*/
+
+.mountaineering {
+	padding: 86px 155px 0px 87px;
+	min-height: 1105px;
+	background: url('../images/hello-sun.jpg') center / 1440px no-repeat;
+}
+.mountaineering__wrap-top {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	align-items: center;
+	max-width: 1105px;
+	margin-bottom: 63px;
+}
+.mountaineering__wrap {
+	display: flex;
+	align-items: center;
+	gap: 65px;
+}
+.mountaineering__wrap-date {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: 'BebasNeue', sans-serif;
+	line-height: 33px;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+}
+.mountaineering__date {
+	font-size: 33.4px;
+}
+.mountaineering__time {
+	font-size: 25px;
+}
+.mountaineering__wrap-bottom {
+	display: flex;
+	flex-direction: column;
+}
+.mountaineering__close {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	right: -192px;
+	width: 8px;
+	height: 30px;
+}
+.mountaineering__close-small {
+	width: 8px;
+	height: 8px;
+}
+.mountaineering__title {
+	position: relative;
+	max-width: 440px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 75px;
+	line-height: 75px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--beige-gray);
+}
+.mountaineering__title::before {
+	position: absolute;
+	content: '';
+	left: -45px;
+	bottom: -37px;
+	width: 36px;
+	height: 37px;
+	border-left: var(--border-gray);
+	border-bottom: var(--border-gray);
+}
+.mountaineering__title::after {
+	position: absolute;
+	content: '';
+	right: -39px;
+	top: -22px;
+	width: 36px;
+	height: 37px;
+	border-top: var(--border-gray);
+	border-right: var(--border-gray);
+}
+.mountaineering__wrap-bottom {
+	margin-left: auto;
+	max-width: 531px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 41.7px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+}
+.mountaineering__subtitle {
+	margin-bottom: 39px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 41.7px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+}
+.subtitle__subdescription {
+	position: relative;
+	margin-bottom: 85px;
+	font-family: 'Bitter', sans-serif;
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+	text-transform: initial;
+}
+.subtitle__subdescription::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -43px;
+	height: 2px;
+	width: 100%;
+	background-color: var(--beige-gray);
+}
+.mountaineering__subtitle-text {
+	font-family: 'Raleway-Bold', sans-serif;
+	font-size: 25px;
+	line-height: 41px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+	text-transform: initial;
 }

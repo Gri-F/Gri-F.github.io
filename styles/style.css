@@ -840,3 +840,145 @@
 	border-left: var(--border-white);
 	border-bottom: var(--border-white);
 }
+
+/*----- camping-classes ---------------*/
+
+.camping-classes {
+	padding: 107px 70px 107px 89px;
+}
+.camping-classes__close {
+	position: absolute;
+	top: 12px;
+	left: -64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 23px;
+	height: 93px;
+}
+.camping-classes__close-pic {
+	width: 23px;
+	height: 23px;
+	fill: var(--beige-gray);
+}
+.camping-classes__list-wrap {
+	position: relative;
+}
+.camping-classes__list-wrap::after {
+	position: absolute;
+	content: '';
+	bottom: -107px;
+	height: 2px;
+	width: 100%;
+	background-color: var(--beige-gray);
+}
+.camping-classes__title {
+	position: relative;
+	margin-bottom: 88px;
+	max-width: 410px;
+	font-family: 'BebasNeue',sans-serif;
+	font-size: 75px;
+	line-height: 75px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--beige-gray);
+}
+.camping-classes__title::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -43px;
+	width: 95px;
+	height: 9px;
+	background-color: var(--beige-gray);
+}
+.camping-classes__wrap {
+	position: relative;
+}
+.camping-classes__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 90px;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+.camping-classes__item {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	max-width: 350px;
+}
+.camping-classes__wrap-svg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 137px;
+	height: 137px;
+	border-radius: 50%;
+	background-color: var(--violet-blue);
+}
+.camping-classes__pic {
+	width: 77px;
+	height: 91px;
+	fill: var(--white);
+}
+.camping-classes__description {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 41.7px;
+	line-height: 45px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--beige-gray);
+}
+.camping-classes__text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 37px;
+	font-weight: 700;
+	text-align: center;
+	color: var(--beige-gray);
+}
+.camping-classes__btn {
+	width: 189px;
+	height: 34px;
+	border: none;
+	border-radius: 30px;
+	font-size: 0px;
+	background-color: var(--beige-gray);
+	transition: 0.7s linear;
+	cursor: pointer;
+}
+.camping-classes__btn:hover {
+	border: 1px solid var(--beige-gray);
+	background-color: var(--champagne);
+	transition: 0.7s;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.camping-classes__btn:hover a {
+	color: var(--beige-gray);
+	transition: 0.7s;
+}
+.camping-classes__link {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 24px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--champagne);
+	text-decoration: none;
+}
+.camping-classes__picture {
+	position: absolute;
+	right: -24px;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 23px;
+	height: 93px;
+}

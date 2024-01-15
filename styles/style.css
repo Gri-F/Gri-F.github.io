@@ -402,11 +402,11 @@
 	background-color: var(--champagne);
 }
 .national-park__btn {
-	padding: 9px 30px;
 	width: 190px;
+	height: 34px;
 	font-size: 0px;
 	border: none;
-	border-radius: 33px;
+	border-radius: 30px;
 	background-color: var(--champagne);
 	transition: 0.7s linear;
 }
@@ -423,6 +423,7 @@
 }
 .national-park__link {
 	text-decoration: none;
+	text-transform: uppercase;
 	font-family: 'Raleway-Bold', sans-serif;
 	font-size: 25px;
 	line-height: 14px;
@@ -434,11 +435,11 @@
 /*----- rock-climbing ----------------*/
 
 .rock-climbing {
-	min-height: 850px;
 	display: flex;
 	flex-direction: column;
 	gap: 63px;
 	padding: 70px 124px 70px 96px;
+	min-height: 850px;
 	background: url('../images/rest-stone.jpg') center bottom / 1440px 1133px no-repeat;
 }
 .rock-climbing__wrap-top {
@@ -725,6 +726,7 @@
 	font-weight: 700;
 	letter-spacing: 0.075em;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--champagne);
 }
 
@@ -793,7 +795,8 @@
 	background-color: var(--champagne);
 }
 .backpacking__btn {
-	padding: 5px 32px 5px 32px;
+	width: 190px;
+	height: 34px;	
 	border-radius: 30px;
 	border: none;
 	transition: 0.7s linear;
@@ -816,6 +819,7 @@
 	font-weight: 700;
 	letter-spacing: 0.075em;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--violet-blue);
 }
 .backpacking__subtitle {
@@ -943,7 +947,7 @@
 	color: var(--beige-gray);
 }
 .camping-classes__btn {
-	width: 189px;
+	width: 190px;
 	height: 34px;
 	border: none;
 	border-radius: 30px;
@@ -968,9 +972,10 @@
 	font-size: 25px;
 	line-height: 24px;
 	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
 	letter-spacing: 0.075em;
 	color: var(--champagne);
-	text-decoration: none;
 }
 .camping-classes__picture {
 	position: absolute;
@@ -986,18 +991,20 @@
 /*----- mountaineering ------------*/
 
 .mountaineering {
-	padding: 86px 155px 0px 87px;
-	min-height: 1105px;
-	background: url('../images/hello-sun.jpg') center / 1440px no-repeat;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 63px;
+	padding: 86px 94px 0px;
+	min-height: 985px;
+	background: url('../images/hello-sun.jpg') center bottom / 1440px 1140px no-repeat;
 }
 .mountaineering__wrap-top {
-	position: relative;
 	display: flex;
 	justify-content: space-between;
 	gap: 35px;
 	align-items: center;
 	max-width: 1105px;
-	margin-bottom: 63px;
 }
 .mountaineering__wrap {
 	display: flex;
@@ -1029,7 +1036,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	right: -192px;
+	right: -39px;
+	top: 31px;
 	width: 8px;
 	height: 30px;
 }
@@ -1039,6 +1047,7 @@
 }
 .mountaineering__title {
 	position: relative;
+	margin-bottom: 63px;
 	max-width: 440px;
 	font-family: 'BebasNeue', sans-serif;
 	font-size: 75px;
@@ -1069,8 +1078,8 @@
 	border-right: var(--border-gray);
 }
 .mountaineering__wrap-bottom {
-	margin-left: auto;
-	max-width: 531px;
+	position: relative;
+	max-width: 520px;
 	font-family: 'BebasNeue', sans-serif;
 	font-size: 41.7px;
 	line-height: 58px;

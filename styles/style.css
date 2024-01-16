@@ -217,7 +217,7 @@
 	gap: 58px;
 }
 .day1__info {
-	max-width: 322px;
+	max-width: 330px;
 }
 .day1__title {
 	font-family: 'BebasNeue',sans-serif;
@@ -325,7 +325,6 @@
 	gap: 22px;
 	padding: 142px 110px 87px 97px;
 	background: linear-gradient(90deg, rgba(86,75,103,0.74), rgba(86,75,103,0.74)), url('../images/one-traveler-pixian-ai.jpg') center / 1440px 579px no-repeat;
-	background-color: rgba(86, 75, 103, 0.75);
 }
 .national-park__title {
 	position: relative;
@@ -711,13 +710,13 @@
 .visit__btn:hover {
 	border: 1px solid var(--violet-blue);
 	background-color: var(--champagne);
-	transition: 0.7s;
+	transition: 0.7s linear;
 	transform: scale(1.1);
 	cursor: pointer;
 }
 .visit__btn:hover a {
 	color: var(--violet-blue);
-	transition: 0.7s;
+	transition: 0.7s linear;
 }
 .visit__link {
 	font-family: 'Raleway-Bold', sans-serif;
@@ -959,13 +958,13 @@
 .camping-classes__btn:hover {
 	border: 1px solid var(--beige-gray);
 	background-color: var(--champagne);
-	transition: 0.7s;
+	transition: 0.7s linear;
 	transform: scale(1.1);
 	cursor: pointer;
 }
 .camping-classes__btn:hover a {
 	color: var(--beige-gray);
-	transition: 0.7s;
+	transition: 0.7s linear;
 }
 .camping-classes__link {
 	font-family: 'Raleway-Bold', sans-serif;
@@ -992,7 +991,7 @@
 
 .mountaineering {
 	display: flex;
-	align-items: flex-start;
+	align-items: baseline;
 	justify-content: space-between;
 	gap: 63px;
 	padding: 86px 94px 0px;
@@ -1008,7 +1007,6 @@
 }
 .mountaineering__wrap {
 	display: flex;
-	align-items: center;
 	gap: 65px;
 }
 .mountaineering__wrap-date {
@@ -1080,11 +1078,20 @@
 .mountaineering__wrap-bottom {
 	position: relative;
 	max-width: 520px;
-	font-family: 'BebasNeue', sans-serif;
-	font-size: 41.7px;
-	line-height: 58px;
-	font-weight: 400;
-	text-transform: uppercase;
+}
+.mountaineering__price {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 700;
+	letter-spacing: 0.075em;
+	color: var(--beige-gray);
+}
+.mountaineering__count {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 700;
 	letter-spacing: 0.075em;
 	color: var(--beige-gray);
 }
@@ -1126,4 +1133,119 @@
 	letter-spacing: 0.075em;
 	color: var(--beige-gray);
 	text-transform: initial;
+}
+
+/*----- restoration ------------------------*/
+
+.restoration {
+	padding: 59px 90px;
+	height: 100%;
+	background: url('../images/shape-left-bottom.png') left bottom -26px / 862px 421px no-repeat,
+	url('../images/shape-right-top.png') right -2px top -18px / 907px 482px no-repeat var(--dark-gray);
+}
+.restoration__wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 72px;
+}
+.restoration__wrap-left {
+	display: flex;
+	flex-direction: column;
+	gap: 94px;
+	margin-right: 100px;
+}
+.restoration__title {
+	position: relative;
+	max-width: 490px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 58.4px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--champagne);
+}
+.restoration__title::after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: -58px;
+	width: 95px;
+	height: 9px;
+	background-color: var(--champagne);
+}
+.restoration__date {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 75px;
+	line-height: 58px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	color: var(--champagne);
+}
+.restoration__wrap-right {
+	display: flex;
+	flex-direction: column;
+	gap: 47px;
+	font-size: 0px;
+}
+.restoration__wrap-date {
+	max-height: 150px;
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--champagne);
+}
+.restoration__count {
+	margin-right: 15px;
+	font-size: 150px;
+}
+.restoration__persent {
+	margin-right: 40px;
+	font-size: 100px;
+}
+.restoration__off {
+	font-size: 25px;
+}
+.restoration__wrap-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.restoration__subtitle {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 37.5px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--champagne);
+}
+.restoration__date-inner {
+	margin-bottom: 10px;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 37.5px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--champagne);
+}
+.restoration__time-inner {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: var(--champagne);
+}
+.restoration__shape {
+	position: absolute;
+	right: -23px;
+	top: 95px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 23px;
+	height: 93px;
+}
+.restoration__close {
+	width: 23px;
+	height: 23px;
 }
